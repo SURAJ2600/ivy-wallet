@@ -193,12 +193,10 @@ dependencies {
             mergeWith("debug")
             html {
                 onCheck = false
-
                 setReportDir(layout.buildDirectory.dir("artifacts/reports/kover/coverageResults"))
             }
         }
     }
-
 
     kover(projects.ivyBase)
     kover(projects.ivyData)

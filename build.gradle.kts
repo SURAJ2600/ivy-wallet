@@ -1,5 +1,3 @@
-import org.gradle.internal.impldep.org.testng.reporters.XMLUtils.xml
-
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     // Run with:
@@ -12,11 +10,6 @@ plugins {
     alias(libs.plugins.koverPlugin)
 }
 
-
-subprojects {
-
-
-}
 subprojects {
     apply(plugin = "org.jetbrains.kotlinx.kover")
     koverReport {
@@ -35,12 +28,7 @@ subprojects {
             }
         }
     }
-
 }
-
-
-
-
 
 wrapperUpgrade {
     gradle {

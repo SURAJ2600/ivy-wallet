@@ -34,8 +34,8 @@ jobs:
 
   code-coverage:
     needs: test
-    if: ${{ steps.unit-tests.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    if: ${{ needs.test.result == 'success' }}
     steps:
       - name: Code Coverage
         run: ./gradlew koverHtmlReport
