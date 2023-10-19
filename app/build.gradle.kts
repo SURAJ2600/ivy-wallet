@@ -188,7 +188,7 @@ dependencies {
 }
 
 dependencies {
-    koverReport{
+    koverReport {
         defaults {
             mergeWith("debug")
             html {
