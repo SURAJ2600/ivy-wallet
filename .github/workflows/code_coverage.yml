@@ -2,10 +2,9 @@ name: Code Coverage
 
 on:
   workflow_run:
-  workflows: [ "Unit tests" ]
-  types:
-    - completed
-
+      workflows: ["Unit tests"]
+      types:
+         - completed
 jobs:
   test:
     runs-on: ubuntu-latest
